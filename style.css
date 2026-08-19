@@ -1,0 +1,45 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Cairo',sans-serif; }
+body { background:#121212; color:#fff; }
+.hidden { display:none; }
+
+/* الشريط العلوي */
+.navbar { display:flex; justify-content:space-between; align-items:center;
+          padding:15px 40px; background:#000; position:sticky; top:0; z-index:10; }
+.logo { font-size:22px; font-weight:900; color:#d4af37; }
+.nav-links { display:flex; gap:10px; }
+
+/* الأزرار */
+.btn { padding:8px 20px; border-radius:25px; text-decoration:none; font-weight:700;
+       border:none; cursor:pointer; transition:.2s; }
+.btn-gold { background:#d4af37; color:#000; }
+.btn-gold:hover { background:#f0c750; transform:scale(1.05); }
+.btn-ghost { color:#fff; border:1px solid #555; }
+.btn.big { padding:14px 35px; font-size:18px; }
+
+/* الواجهة */
+.hero { text-align:center; padding:100px 20px 80px;
+        background:linear-gradient(180deg,#1f1f1f,#121212); }
+.hero h1 { font-size:44px; color:#d4af37; margin-bottom:15px; }
+.hero p { color:#bbb; font-size:18px; margin-bottom:30px; }
+
+/* النبذة */
+.about { padding:60px 20px; text-align:center; }
+.about h2 { color:#d4af37; margin-bottom:30px; }
+.cards { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; }
+.card { background:#181818; border:1px solid #333; border-radius:12px;
+        padding:25px; width:260px; font-size:16px; }
+
+/* تسجيل الدخول */
+.auth { display:flex; justify-content:center; padding:60px 20px; }
+.auth-box { background:#181818; border:1px solid #333; border-radius:15px;
+            padding:30px; width:100%; max-width:400px; }
+.tabs { display:flex; margin-bottom:20px; }
+.tab { flex:1; padding:10px; background:none; border:none; color:#888;
+       font-weight:700; cursor:pointer; font-size:15px; }
+.tab.active { color:#d4af37; border-bottom:2px solid #d4af37; }
+form { display:flex; flex-direction:column; gap:12px; }
+input { padding:12px; border-radius:8px; border:1px solid #333;
+        background:#222; color:#fff; font-family:'Cairo'; }
+input:focus { outline:none; border-color:#d4af37; }
+
+footer { text-align:center; padding:20px; color:#666; border-top:1px solid #222; }

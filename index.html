@@ -1,0 +1,68 @@
+
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>ترانيم تراثية | الرئيسية</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- الشريط العلوي -->
+  <nav class="navbar">
+    <div class="logo">🎵</div>
+    <div class="nav-links">
+      <a href="library.html" class="btn btn-ghost">المكتبة</a>
+      <a href="#auth" class="btn btn-gold">تسجيل الدخول</a>
+    </div>
+  </nav>
+
+  <!-- Interface -->
+  <header class="hero">
+    <h1>ترانييم أرثوذكسية تراثية</h1>
+    <p>اسمع، كوّن قوائم التشغيل بتاعتك، وعيش أجواء التسبحة في أي وقت</p>
+    <a href="library.html" class="btn btn-gold big">🎧 ادخل المكتبة</a>
+  </header>
+
+  <!-- anout-->
+  <section class="about">
+    <h2>ليه الموقع ده؟</h2>
+    <div class="cards">
+      <div class="card">🎼 ترانييم تراثية محفوظة بجودة عالية</div>
+      <div class="card">📋 قوائم تشغيل مخصصة لكل مستخدم</div>
+      <div class="card">🔍 بحث وتقسيم حسب المناسبة</div>
+    </div>
+  </section>
+
+  <!-- تسجيل الدخول / حساب جديد -->
+  <section class="auth" id="auth">
+    <div class="auth-box">
+      <div class="tabs">
+        <button class="tab active" onclick="showTab('login', this)">تسجيل الدخول</button>
+        <button class="tab" onclick="showTab('signup', this)">حساب جديد</button>
+      </div>
+
+      <form id="loginForm">
+        <input type="email" id="loginEmail" placeholder="الإيميل" required>
+        <input type="password" id="loginPass" placeholder="كلمة السر" required>
+        <button type="submit" class="btn btn-gold">دخول</button>
+      </form>
+
+      <form id="signupForm" class="hidden">
+        <input type="text" id="signupName" placeholder="الاسم" required>
+        <input type="email" id="signupEmail" placeholder="الإيميل" required>
+        <input type="password" id="signupPass" placeholder="كلمة السر (٦ حروف على الأقل)" required>
+        <button type="submit" class="btn btn-gold">إنشاء الحساب</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>مسابقة الكمبيوتر — مشروع فردي 💛</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
